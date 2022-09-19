@@ -14,6 +14,7 @@ struct ProfileHeaderView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 100,height: 100, alignment: .center)
+                .circle()
             VStack(alignment: .leading) {
                 Text("桃子猪")
                     .font(.system(size: 45))
