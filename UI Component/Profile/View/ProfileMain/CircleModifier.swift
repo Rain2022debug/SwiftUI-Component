@@ -18,6 +18,12 @@ struct CircleModifier: ViewModifier{
                 Circle().stroke(.orange,lineWidth: lineWidth)
             }
             .shadow(radius: shadowRadius)
+            .animation(.default.repeatForever(), value: lineWidth)
+            .animation(.default.repeatForever(), value: shadowRadius)
+            .onAppear {
+                lineWidth = 2
+                shadowRadius = 3
+            }
     }
 }
 extension View{
