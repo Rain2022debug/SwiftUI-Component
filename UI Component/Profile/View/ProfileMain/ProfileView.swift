@@ -6,10 +6,28 @@
 //
 
 import SwiftUI
-
+let items: [ListItemModel] = [.init(icon: "message.and.waveform", title: "服务"),
+                                 .init(icon: "shippingbox", title: "收藏"),
+                                 .init(icon: "menucard", title: "卡包"),
+                                 .init(icon: "gearshape", title: "设置")]
 struct ProfileView: View {
     var body: some View {
-        Text("ProfileView")
+        ZStack {
+            Text("ProfileView")
+            List {
+                Section{
+                    ProfileHeaderView()
+                }
+                Section{
+                    ForEach(items) { item in
+                        HStack {
+                            Image(systemName: item.icon)
+                            Text(item.title)
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 

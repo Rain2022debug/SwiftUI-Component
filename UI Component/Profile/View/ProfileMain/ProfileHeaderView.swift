@@ -13,7 +13,7 @@ struct ProfileHeaderView: View {
             Image("timeline_profile_image")
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 100,height: 100, alignment: .center)
+                .frame(width: 80,height: 80, alignment: .center)
                 .circle()
             VStack(alignment: .leading) {
                 Text("桃子猪")
