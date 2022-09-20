@@ -13,19 +13,33 @@ let items: [ListItemModel] = [.init(icon: "message.and.waveform", title: "服务
 struct ProfileView: View {
     var body: some View {
         ZStack {
-            Text("ProfileView")
-            List {
-                Section{
-                    ProfileHeaderView()
-                }
-                Section{
-                    ForEach(items) { item in
-                        HStack {
-                            Image(systemName: item.icon)
-                            Text(item.title)
+            NavigationView {
+                List {
+                    Section{
+                        ProfileHeaderView()
+                    }
+                    Section{
+                        ForEach(items) { item in
+                            if item.title == "设置" {
+                                NavigationLink {
+                                    SettingsView()
+                                } label: {
+                                    HStack {
+                                        Image(systemName: item.icon)
+                                        Text(item.title)
+                                    }
+                                }
+                            } else {
+                                HStack {
+                                    Image(systemName: item.icon)
+                                    Text(item.title)
+                                }
+                            }
                         }
                     }
                 }
+                .navigationTitle("我的")
+                .navigationBarTitleDisplayMode(.inline)
             }
         }
     }
