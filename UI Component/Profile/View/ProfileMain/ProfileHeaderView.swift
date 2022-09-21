@@ -9,6 +9,8 @@ import SwiftUI
 
 struct ProfileHeaderView: View {
     @Environment(\.horizontalSizeClass) var sizeClass
+    @Environment(\.scenePhase) var scenePhase
+    @State var name : String = "桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪"
     var body: some View {
         HStack {
             Image("timeline_profile_image")
@@ -17,9 +19,16 @@ struct ProfileHeaderView: View {
                 .frame(width: 80,height: 80, alignment: .center)
                 .circle()
             VStack(alignment: .leading) {
-                Text("桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪")
+                Text(name)
                     .font(.system(size: 35))
                     .lineLimit(2)
+                    .onChange(of: scenePhase) { newValue in
+                        if newValue == .inactive{
+                            name = "用户昵称保密"
+                        }else if newValue == .active{
+                            name = "桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪"
+                        }
+                    }
                 if sizeClass == .compact{
                     HStack {
                         Text("微信号：XXXXXXX")
