@@ -29,18 +29,18 @@ struct ProfileHeaderView: View {
                         .foregroundColor(Color.gray)
                         Text("个性签名：123456789")
                             .lineLimit(1)
-                            .font(.title3)
+                            .font(.system(size: 23))
                             .foregroundColor(.orange)
                     }
                 }else {
                     Text("微信号:XXXXXXX")
                         .layoutPriority(1)
                         .lineLimit(1)
-                        .font(.title3)
+                        .font(.system(size: 23))
                         .foregroundColor(.gray)
                     Text("个性签名：123456789")
                         .lineLimit(1)
-                        .font(.title3)
+                        .font(.system(size: 23))
                         .foregroundColor(.orange)
                 }
                 
