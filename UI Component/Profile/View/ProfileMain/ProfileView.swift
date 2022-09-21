@@ -11,6 +11,7 @@ let items: [ListItemModel] = [.init(icon: "message.and.waveform", title: "服务
                                  .init(icon: "menucard", title: "卡包"),
                                  .init(icon: "gearshape", title: "设置")]
 struct ProfileView: View {
+    @Environment(\.scenePhase) var scenePhase
     var body: some View {
         ZStack {
             NavigationView {

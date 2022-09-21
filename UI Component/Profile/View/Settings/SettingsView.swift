@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @State private var showingAlert = false
     let topId: String="topId"
     let item = ListItemModel(icon: "gearshape", title: "设置")
     var body: some View {
@@ -27,6 +28,15 @@ struct SettingsView: View {
                     }
                 }
             }
+        }
+        .alert(isPresented: $showingAlert) {
+                    Alert(title: Text("欢迎进入设置页面"),dismissButton: .default(Text("Got it!")))
+                }
+        .onAppear{
+            print("SettingsView onAppear")
+            showingAlert = true
+        }.onDisappear{
+            print("SettingsView onDisappear")
         }
     }
 }
