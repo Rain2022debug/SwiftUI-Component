@@ -25,8 +25,10 @@ struct ProfileHeaderView: View {
                     .onChange(of: scenePhase) { newValue in
                         if newValue == .inactive{
                             name = "用户昵称保密"
+                            print(name)
                         }else if newValue == .active{
                             name = "桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪"
+                            print(name)
                         }
                     }
                 if sizeClass == .compact{

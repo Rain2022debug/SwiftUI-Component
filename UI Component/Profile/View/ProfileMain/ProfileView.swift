@@ -13,7 +13,6 @@ let items: [ListItemModel] = [.init(icon: "message.and.waveform", title: "服务
 struct ProfileView: View {
     @Environment(\.scenePhase) var scenePhase
     var body: some View {
-        ZStack {
             NavigationView {
                 List {
                     Section{
@@ -30,7 +29,17 @@ struct ProfileView: View {
                                         Text(item.title)
                                     }
                                 }
-                            } else {
+                            } else if item.title == "卡包"{
+                                NavigationLink {
+                                    CardBagView()
+                                } label: {
+                                    HStack {
+                                        Image(systemName: item.icon)
+                                        Text(item.title)
+                                    }
+                                }
+                            }
+                            else {
                                 HStack {
                                     Image(systemName: item.icon)
                                     Text(item.title)
@@ -42,7 +51,6 @@ struct ProfileView: View {
                 .navigationTitle("我的")
                 .navigationBarTitleDisplayMode(.inline)
             }
-        }
     }
 }
 
