@@ -9,7 +9,18 @@ import SwiftUI
 
 struct TimelineView: View {
     var body: some View {
-        Text("TimelineView")
+        List {
+            TimelineHeaderView(
+                nickname: "桃子猪",
+                profileImageName: "timeline_profile_image",
+                backgroundImageName: "timeline_profile_background")
+                .listRowInsets(EdgeInsets())
+                .listRowSeparator(.hidden)
+            TimelineContentView()
+                .listRowSeparator(.hidden)
+        }
+        .listStyle(.plain)
+        .navigationBarTitle("朋友圈")
     }
 }
 

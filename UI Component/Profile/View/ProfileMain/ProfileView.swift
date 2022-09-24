@@ -6,12 +6,11 @@
 //
 
 import SwiftUI
-let items: [ListItemModel] = [.init(icon: "message.and.waveform", title: "服务"),
+let profileItems: [ListItemModel] = [.init(icon: "message.and.waveform", title: "服务"),
                                  .init(icon: "shippingbox", title: "收藏"),
                                  .init(icon: "menucard", title: "卡包"),
                                  .init(icon: "gearshape", title: "设置")]
 struct ProfileView: View {
-    @Environment(\.scenePhase) var scenePhase
     var body: some View {
         ZStack {
             NavigationView {
@@ -20,7 +19,7 @@ struct ProfileView: View {
                         ProfileHeaderView()
                     }
                     Section{
-                        ForEach(items) { item in
+                        ForEach(profileItems) { item in
                             if item.title == "设置" {
                                 NavigationLink {
                                     SettingsView()

@@ -9,8 +9,9 @@ import SwiftUI
 
 struct SettingsView: View {
     @State private var showingAlert = false
-    let topId: String="topId"
+    let topId: String = "topId"
     let item = ListItemModel(icon: "gearshape", title: "设置")
+    
     var body: some View {
         ScrollViewReader { proxy in
             List{

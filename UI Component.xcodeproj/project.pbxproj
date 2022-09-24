@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		25384E7828D8479C0030365C /* CircleModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384E7728D8479C0030365C /* CircleModifier.swift */; };
+		25384F1528DDBE5C0030365C /* TimelineHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384F1428DDBE5C0030365C /* TimelineHeaderView.swift */; };
+		25384F1728DDBE7E0030365C /* TimelineContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384F1628DDBE7E0030365C /* TimelineContentView.swift */; };
+		25384F1928DDBE9C0030365C /* TimelineContentItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384F1828DDBE9C0030365C /* TimelineContentItemView.swift */; };
+		25384F1B28DDBEC00030365C /* TimelinkContentLikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384F1A28DDBEC00030365C /* TimelinkContentLikeView.swift */; };
 		8EDB1A80279A80F7001600B5 /* UI_ComponentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDB1A7F279A80F7001600B5 /* UI_ComponentApp.swift */; };
 		8EDB1A82279A80F7001600B5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDB1A81279A80F7001600B5 /* HomeView.swift */; };
 		8EDB1A84279A80FD001600B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EDB1A83279A80FD001600B5 /* Assets.xcassets */; };
@@ -22,6 +26,10 @@
 
 /* Begin PBXFileReference section */
 		25384E7728D8479C0030365C /* CircleModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleModifier.swift; sourceTree = "<group>"; };
+		25384F1428DDBE5C0030365C /* TimelineHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineHeaderView.swift; sourceTree = "<group>"; };
+		25384F1628DDBE7E0030365C /* TimelineContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineContentView.swift; sourceTree = "<group>"; };
+		25384F1828DDBE9C0030365C /* TimelineContentItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineContentItemView.swift; sourceTree = "<group>"; };
+		25384F1A28DDBEC00030365C /* TimelinkContentLikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinkContentLikeView.swift; sourceTree = "<group>"; };
 		8EDB1A7C279A80F7001600B5 /* UI Component.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI Component.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDB1A7F279A80F7001600B5 /* UI_ComponentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI_ComponentApp.swift; sourceTree = "<group>"; };
 		8EDB1A81279A80F7001600B5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -120,6 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				8EE3807B279A8BB200A19AE4 /* TimelineView.swift */,
+				25384F1428DDBE5C0030365C /* TimelineHeaderView.swift */,
+				25384F1628DDBE7E0030365C /* TimelineContentView.swift */,
+				25384F1828DDBE9C0030365C /* TimelineContentItemView.swift */,
+				25384F1A28DDBEC00030365C /* TimelinkContentLikeView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -238,13 +250,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25384F1928DDBE9C0030365C /* TimelineContentItemView.swift in Sources */,
 				8EE3807A279A89B900A19AE4 /* ExplorationView.swift in Sources */,
 				25384E7828D8479C0030365C /* CircleModifier.swift in Sources */,
 				B213226F28C74A1500281249 /* ProfileView.swift in Sources */,
 				8EDB1A82279A80F7001600B5 /* HomeView.swift in Sources */,
+				25384F1528DDBE5C0030365C /* TimelineHeaderView.swift in Sources */,
 				B213227428C74C8800281249 /* ListItemModel.swift in Sources */,
 				B213226D28C748F700281249 /* ProfileHeaderView.swift in Sources */,
 				8EDB1A80279A80F7001600B5 /* UI_ComponentApp.swift in Sources */,
+				25384F1B28DDBEC00030365C /* TimelinkContentLikeView.swift in Sources */,
+				25384F1728DDBE7E0030365C /* TimelineContentView.swift in Sources */,
 				8EE3807C279A8BB200A19AE4 /* TimelineView.swift in Sources */,
 				B213227828C9999B00281249 /* SettingsView.swift in Sources */,
 			);

@@ -35,7 +35,7 @@ struct ProfileHeaderView: View {
                             .font(.system(size: 23))
                             .layoutPriority(1)
                             .lineLimit(1)
-                        .foregroundColor(Color.gray)
+                            .foregroundColor(Color.gray)
                         Text("个性签名：123456789")
                             .lineLimit(1)
                             .font(.system(size: 23))
@@ -43,7 +43,6 @@ struct ProfileHeaderView: View {
                     }
                 }else {
                     Text("微信号:XXXXXXX")
-                        .layoutPriority(1)
                         .lineLimit(1)
                         .font(.system(size: 23))
                         .foregroundColor(.gray)
@@ -52,8 +51,6 @@ struct ProfileHeaderView: View {
                         .font(.system(size: 23))
                         .foregroundColor(.orange)
                 }
-                
-
             }
         }
     }
