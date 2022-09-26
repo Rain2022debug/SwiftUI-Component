@@ -11,28 +11,25 @@ let items: [ListItemModel] = [.init(icon: "message.and.waveform", title: "服务
                                  .init(icon: "menucard", title: "卡包"),
                                  .init(icon: "gearshape", title: "设置")]
 struct ProfileView: View {
-    @Environment(\.scenePhase) var scenePhase
     var body: some View {
             NavigationView {
                 List {
                     Section{
-                        ProfileHeaderView()
+                        NavigationLink(destination: ProfileAvatarModificationView()) {
+                            ProfileHeaderView()
+                        }
                     }
                     Section{
                         ForEach(items) { item in
                             if item.title == "设置" {
-                                NavigationLink {
-                                    SettingsView()
-                                } label: {
+                                NavigationLink(destination: SettingsView()) {
                                     HStack {
                                         Image(systemName: item.icon)
                                         Text(item.title)
                                     }
                                 }
                             } else if item.title == "卡包"{
-                                NavigationLink {
-                                    CardBagView()
-                                } label: {
+                                NavigationLink(destination: CardBagView()) {
                                     HStack {
                                         Image(systemName: item.icon)
                                         Text(item.title)
@@ -56,6 +53,8 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
+        let loginedModel: LoginedModelFromHomeView = LoginedModelFromHomeView()
         ProfileView()
+            .environmentObject(loginedModel)
     }
 }

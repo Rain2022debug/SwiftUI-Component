@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct TimelineView: View {
+    @EnvironmentObject private var loginedModel: LoginedModelFromHomeView
+    
     var body: some View {
         List {
-            TimelineHeaderView(nickname: "桃子猪", profileImageName: "timeline_profile_image", backgroundImageName: "timeline_profile_background")
+            TimelineHeaderView(nickname: loginedModel.profile.nickname, profileImageName: loginedModel.profile.avatarUrl, backgroundImageName: "timeline_profile_background")
                 .listRowInsets(EdgeInsets())
                 .listRowSeparator(.hidden)
             TimelineContentView()
@@ -23,6 +25,8 @@ struct TimelineView: View {
 
 struct TimelineView_Previews: PreviewProvider {
     static var previews: some View {
+        let loginedModel: LoginedModelFromHomeView = LoginedModelFromHomeView()
         TimelineView()
+            .environmentObject(loginedModel)
     }
 }
