@@ -10,7 +10,7 @@ import SwiftUI
 struct ProfileHeaderView: View {
     @Environment(\.horizontalSizeClass) var sizeClass
     @Environment(\.scenePhase) var scenePhase
-    @State var name : String = "桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪"
+    @State var name : String = "桃子猪"
     var body: some View {
         HStack {
             Image("timeline_profile_image")
@@ -27,7 +27,7 @@ struct ProfileHeaderView: View {
                             name = "用户昵称保密"
                             print(name)
                         }else if newValue == .active{
-                            name = "桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪桃子猪"
+                            name = "桃子猪"
                             print(name)
                         }
                     }

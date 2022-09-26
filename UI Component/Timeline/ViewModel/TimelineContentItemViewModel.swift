@@ -32,5 +32,6 @@ final class TimelineContentItemViewModel{
         }
         
         showLikes = timelineContent.likes.count > 0
+        likes.append(contentsOf: timelineContent.likes)
     }
 }
