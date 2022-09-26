@@ -21,18 +21,14 @@ struct ProfileView: View {
                     Section{
                         ForEach(items) { item in
                             if item.title == "设置" {
-                                NavigationLink {
-                                    SettingsView()
-                                } label: {
+                                NavigationLink(destination: SettingsView()) {
                                     HStack {
                                         Image(systemName: item.icon)
                                         Text(item.title)
                                     }
                                 }
                             } else if item.title == "卡包"{
-                                NavigationLink {
-                                    CardBagView()
-                                } label: {
+                                NavigationLink(destination: CardBagView()) {
                                     HStack {
                                         Image(systemName: item.icon)
                                         Text(item.title)
