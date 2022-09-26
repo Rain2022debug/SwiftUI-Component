@@ -20,9 +20,14 @@ struct ExplorationView: View {
                 ForEach(explorationItems) { item in
                     if item.title == "朋友圈"{
                         NavigationLink(destination: TimelineView()) {
-                            Label("朋友圈", systemImage: "circle.circle.fill")
+                            Label(item.title, systemImage: item.icon)
                         }
-                    } else{
+                    } else if item.title == "游戏"{
+                        NavigationLink(destination: GameView()) {
+                            Label(item.title, systemImage: item.icon)
+                        }
+                    }
+                    else{
                         Label(item.title, systemImage: item.icon)
                     }
                 }
