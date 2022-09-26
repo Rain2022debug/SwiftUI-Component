@@ -19,6 +19,7 @@
 		25384F2328E139EF0030365C /* TimelinkContentLikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384F2228E139EF0030365C /* TimelinkContentLikeView.swift */; };
 		25384F2728E152A10030365C /* LoginedModelFromHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384F2628E152A10030365C /* LoginedModelFromHomeView.swift */; };
 		25384F2928E15A810030365C /* ProfileAvatarModificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384F2828E15A810030365C /* ProfileAvatarModificationView.swift */; };
+		25384F2C28E187A80030365C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384F2B28E187A80030365C /* Color.swift */; };
 		8EDB1A80279A80F7001600B5 /* UI_ComponentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDB1A7F279A80F7001600B5 /* UI_ComponentApp.swift */; };
 		8EDB1A82279A80F7001600B5 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDB1A81279A80F7001600B5 /* HomeView.swift */; };
 		8EDB1A84279A80FD001600B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8EDB1A83279A80FD001600B5 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		25384F2228E139EF0030365C /* TimelinkContentLikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinkContentLikeView.swift; sourceTree = "<group>"; };
 		25384F2628E152A10030365C /* LoginedModelFromHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginedModelFromHomeView.swift; sourceTree = "<group>"; };
 		25384F2828E15A810030365C /* ProfileAvatarModificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAvatarModificationView.swift; sourceTree = "<group>"; };
+		25384F2B28E187A80030365C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		8EDB1A7C279A80F7001600B5 /* UI Component.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI Component.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDB1A7F279A80F7001600B5 /* UI_ComponentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UI_ComponentApp.swift; sourceTree = "<group>"; };
 		8EDB1A81279A80F7001600B5 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		25384F2A28E1875C0030365C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				25384F2B28E187A80030365C /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8EDB1A73279A80F7001600B5 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +130,7 @@
 		8EDB1A7E279A80F7001600B5 /* UI Component */ = {
 			isa = PBXGroup;
 			children = (
+				25384F2A28E1875C0030365C /* Extensions */,
 				8EFF8CEB279AAA7900956FA1 /* Application */,
 				8EFF8CEC279AAA9100956FA1 /* Home */,
 				8EFF8CED279AAAA100956FA1 /* Exploration */,
@@ -305,6 +316,7 @@
 			files = (
 				8EE3807A279A89B900A19AE4 /* ExplorationView.swift in Sources */,
 				25384F1F28E139350030365C /* TimelineContentView.swift in Sources */,
+				25384F2C28E187A80030365C /* Color.swift in Sources */,
 				25384F2328E139EF0030365C /* TimelinkContentLikeView.swift in Sources */,
 				25384F2928E15A810030365C /* ProfileAvatarModificationView.swift in Sources */,
 				25384E7828D8479C0030365C /* CircleModifier.swift in Sources */,
