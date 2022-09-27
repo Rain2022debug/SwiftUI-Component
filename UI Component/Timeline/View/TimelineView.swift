@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct TimelineView: View {
-    @EnvironmentObject private var loginedModel: LoginedModelFromHomeView
+    @EnvironmentObject private var loginedModel: LoggedInModelFromHomeView
     
     var body: some View {
         List {
@@ -25,7 +25,7 @@ struct TimelineView: View {
 
 struct TimelineView_Previews: PreviewProvider {
     static var previews: some View {
-        let loginedModel: LoginedModelFromHomeView = LoginedModelFromHomeView()
+        let loginedModel: LoggedInModelFromHomeView = LoggedInModelFromHomeView()
         TimelineView()
             .environmentObject(loginedModel)
     }

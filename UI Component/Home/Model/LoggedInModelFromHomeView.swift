@@ -7,10 +7,10 @@
 import Foundation
 import SwiftUI
 
-class LoginedModelFromHomeView: ObservableObject {
+class LoggedInModelFromHomeView: ObservableObject {
     @Published private(set) var profile: Profile = Profile(nickname: "桃子猪", avatarUrl: "timeline_profile_image", backgroundUrl: "timeline_profile_background")
 
-    func updateLoginedAvatarUrl(url: String) {
+    func updateLoggedInAvatarUrl(url: String) {
         profile = Profile(nickname: profile.nickname, avatarUrl: url, backgroundUrl: profile.backgroundUrl)
     }
 }

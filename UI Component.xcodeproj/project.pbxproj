@@ -17,7 +17,7 @@
 		25384F1F28E139350030365C /* TimelineContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384F1E28E139350030365C /* TimelineContentView.swift */; };
 		25384F2128E139B80030365C /* TimelineContentItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384F2028E139B80030365C /* TimelineContentItemView.swift */; };
 		25384F2328E139EF0030365C /* TimelinkContentLikeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384F2228E139EF0030365C /* TimelinkContentLikeView.swift */; };
-		25384F2728E152A10030365C /* LoginedModelFromHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384F2628E152A10030365C /* LoginedModelFromHomeView.swift */; };
+		25384F2728E152A10030365C /* LoggedInModelFromHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384F2628E152A10030365C /* LoggedInModelFromHomeView.swift */; };
 		25384F2928E15A810030365C /* ProfileAvatarModificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384F2828E15A810030365C /* ProfileAvatarModificationView.swift */; };
 		25384F2C28E187A80030365C /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25384F2B28E187A80030365C /* Color.swift */; };
 		8EDB1A80279A80F7001600B5 /* UI_ComponentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDB1A7F279A80F7001600B5 /* UI_ComponentApp.swift */; };
@@ -43,7 +43,7 @@
 		25384F1E28E139350030365C /* TimelineContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineContentView.swift; sourceTree = "<group>"; };
 		25384F2028E139B80030365C /* TimelineContentItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineContentItemView.swift; sourceTree = "<group>"; };
 		25384F2228E139EF0030365C /* TimelinkContentLikeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelinkContentLikeView.swift; sourceTree = "<group>"; };
-		25384F2628E152A10030365C /* LoginedModelFromHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginedModelFromHomeView.swift; sourceTree = "<group>"; };
+		25384F2628E152A10030365C /* LoggedInModelFromHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedInModelFromHomeView.swift; sourceTree = "<group>"; };
 		25384F2828E15A810030365C /* ProfileAvatarModificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileAvatarModificationView.swift; sourceTree = "<group>"; };
 		25384F2B28E187A80030365C /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		8EDB1A7C279A80F7001600B5 /* UI Component.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UI Component.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,7 +98,7 @@
 		25384F2528E152940030365C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				25384F2628E152A10030365C /* LoginedModelFromHomeView.swift */,
+				25384F2628E152A10030365C /* LoggedInModelFromHomeView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -325,7 +325,7 @@
 				25384F0E28DD79A30030365C /* Profile.swift in Sources */,
 				8EDB1A82279A80F7001600B5 /* HomeView.swift in Sources */,
 				B213227428C74C8800281249 /* ListItemModel.swift in Sources */,
-				25384F2728E152A10030365C /* LoginedModelFromHomeView.swift in Sources */,
+				25384F2728E152A10030365C /* LoggedInModelFromHomeView.swift in Sources */,
 				B213226D28C748F700281249 /* ProfileHeaderView.swift in Sources */,
 				25384F2128E139B80030365C /* TimelineContentItemView.swift in Sources */,
 				8EDB1A80279A80F7001600B5 /* UI_ComponentApp.swift in Sources */,

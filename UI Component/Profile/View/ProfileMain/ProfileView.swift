@@ -53,8 +53,8 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        let loginedModel: LoginedModelFromHomeView = LoginedModelFromHomeView()
+        let loggedInModel: LoggedInModelFromHomeView = LoggedInModelFromHomeView()
         ProfileView()
-            .environmentObject(loginedModel)
+            .environmentObject(loggedInModel)
     }
 }

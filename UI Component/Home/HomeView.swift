@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
-    @StateObject private var loginedModel: LoginedModelFromHomeView = LoginedModelFromHomeView()
+    @StateObject private var loggedInModel: LoggedInModelFromHomeView = LoggedInModelFromHomeView()
     @State private var selectionTab: HomeTab = .exploration
     
     var body: some View {
@@ -35,7 +35,7 @@ struct HomeView: View {
                 }
                 .tag(HomeTab.me)
         }
-        .environmentObject(loginedModel)
+        .environmentObject(loggedInModel)
     }
 }
 
