@@ -9,9 +9,6 @@ import Foundation
 
 final class TimelineContentViewModel: ObservableObject{
     @Published private(set) var contents: [TimelineContent] = []
-    init() {
-        loadData()
-    }
     
     func loadData() {
         contents.removeAll()

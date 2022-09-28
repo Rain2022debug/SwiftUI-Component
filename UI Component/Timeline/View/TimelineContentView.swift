@@ -17,6 +17,8 @@ struct TimelineContentView: View {
                     TimelineContentItemView(timelineContent: $0)
                 }
             }
+        }.onAppear(){
+            viewModel.loadData()
         }
     }
 }
