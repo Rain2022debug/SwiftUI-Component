@@ -17,7 +17,8 @@ struct GameView: View {
             
             Text("当前时间：\(date.description)")
             
-            StepsPlate().padding(.top, 20)
+            StepsPlate()
+                .padding(.top, 20)
         }
     }
 }

@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct StepsPlate: View {
-    @State private var steps : Int = 0
+    @StateObject var model : StepsModel = .init()
     var body: some View {
         VStack {
             Button("+1") {
-                steps += 1
-                print("当前步数: \(steps)")
+                model.steps += 1
             }
-            Text("步数: \(steps)")
+            Text("步数: \(model.steps)")
         }
     }
 }
