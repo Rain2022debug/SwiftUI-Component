@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct ProfileAvatarModificationView: View {
-    @EnvironmentObject private var loginedModel: LoginedModelFromHomeView
+    @EnvironmentObject private var loggedInModel: LoggedInModelFromHomeView
     @State private var displayMore: Bool = false
     
     var body: some View {
         VStack {
             Spacer()
-            Image(loginedModel.profile.avatarUrl)
+            Image(loggedInModel.profile.avatarUrl)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(alignment: .center)
@@ -30,7 +30,7 @@ struct ProfileAvatarModificationView: View {
             .actionSheet(isPresented: $displayMore) {
                 ActionSheet(title: Text("More"),
                             buttons: [
-                                .default(Text("修改头像")) {loginedModel.updateLoginedAvatarUrl(url: "timeline_profile_image_tu")},
+                                .default(Text("修改头像")) {loggedInModel.updateLoginedAvatarUrl(url: "timeline_profile_image_tu")},
                                 .cancel()])
             }
 
@@ -40,7 +40,7 @@ struct ProfileAvatarModificationView: View {
 
 struct ProfileAvatarModificationView_Previews: PreviewProvider {
     static var previews: some View {
-        let loginedModel: LoginedModelFromHomeView = LoginedModelFromHomeView()
+        let loginedModel: LoggedInModelFromHomeView = LoggedInModelFromHomeView()
         return ProfileAvatarModificationView()
             .environmentObject(loginedModel)
     }

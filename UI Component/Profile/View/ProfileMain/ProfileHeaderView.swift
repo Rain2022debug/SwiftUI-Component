@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ProfileHeaderView: View {
-    @EnvironmentObject private var loginedModel: LoginedModelFromHomeView
+    @EnvironmentObject private var loggedInModel: LoggedInModelFromHomeView
     @Environment(\.horizontalSizeClass) var sizeClass
     @Environment(\.scenePhase) var scenePhase
     @Environment(\.colorScheme) var colorScheme: ColorScheme
@@ -16,13 +16,13 @@ struct ProfileHeaderView: View {
     
     var body: some View {
         HStack {
-            Image(loginedModel.profile.avatarUrl)
+            Image(loggedInModel.profile.avatarUrl)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 80,height: 80, alignment: .center)
                 .circle()
             VStack(alignment: .leading) {
-                Text(loginedModel.profile.nickname)
+                Text(loggedInModel.profile.nickname)
                     .font(.system(size: 35))
 //                    .foregroundColor(colorScheme == .dark ? .white : .black)
                     .foregroundColor(Color.skyFont)
@@ -31,7 +31,7 @@ struct ProfileHeaderView: View {
                         if newValue == .inactive{
                             name = "用户昵称保密"
                         }else if newValue == .active{
-                            name = loginedModel.profile.nickname
+                            name = loggedInModel.profile.nickname
                         }
                     }
                 if sizeClass == .compact{
@@ -45,7 +45,7 @@ struct ProfileHeaderView: View {
 }
 
 struct ProfileHeaderView_Previews: PreviewProvider {
-    static let loginedModel: LoginedModelFromHomeView = LoginedModelFromHomeView()
+    static let loginedModel: LoggedInModelFromHomeView = LoggedInModelFromHomeView()
     static var previews: some View {
         ProfileHeaderView()
             .environmentObject(loginedModel)
